@@ -8,7 +8,7 @@ contract firstContract {
       name = newName; // memory refers to data location with arrays, structs, and mappings. remember memory vs storage
    }
 
-   function getName() public view return (string memory) {
+   function getName() public view returns (string memory) {
       return name; // view means we can access but not modify contract storage. pure is for no access, no modifying.
    }
 
